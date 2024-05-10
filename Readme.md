@@ -5,7 +5,7 @@
 
 Este ejemplo demuestra cómo crear un bot de Telegram utilizando el lenguaje de programación Python y la librería `telebot`. El bot implementado en este ejemplo ofrece funcionalidades básicas, como saludar a los usuarios, contar palabras y contar caracteres en mensajes de texto. 
 
-> [LINKS_IMPORTANTES] <br>
+> **_LINKS IMPORTANTES:_**<br>
 >[Documentación de la API de Telegram Bot](https://core.telegram.org/bots)<br>
 >[Documentación telebot](https://github.com/eternnoir/pyTelegramBotAPI)
 
@@ -17,5 +17,5 @@ Para ejecutar el bot localmente, necesitas lo siguiente:
 - Un bot token de Telegram obtenido del BotFather en Telegram
 - La librería `telebot` instalada (`pip install pyTelegramBotAPI`)
 
->[!NOTE]<br>
+> **_NOTA:_**<br>
 > Sustituye "TELEGRAM_TOKEN" en el código del bot por tu token bot real.
