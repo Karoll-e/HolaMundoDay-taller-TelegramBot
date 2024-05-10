@@ -17,5 +17,5 @@ Para ejecutar el bot localmente, necesitas lo siguiente:
 - Un bot token de Telegram obtenido del BotFather en Telegram
 - La librería `telebot` instalada (`pip install pyTelegramBotAPI`)
 
-> **_NOTA:_**<br>
+> [!NOTE]
 > Sustituye "TELEGRAM_TOKEN" en el código del bot por tu token bot real.
