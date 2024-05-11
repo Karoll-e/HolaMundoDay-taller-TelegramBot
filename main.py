@@ -5,7 +5,7 @@ from telebot.types import KeyboardButton, ReplyKeyboardMarkup
 bot = telebot.TeleBot("TELEGRAM_TOKEN")
 
 
-# Define un gestor de mensajes para los comandos /start y /help.
+# Definir un gestor de mensajes para los comandos /start y /help.
 @bot.message_handler(commands=["start", "help"])
 def send_welcome(message):
     bot.reply_to(
@@ -26,13 +26,13 @@ def count(message):
         row_width=2, resize_keyboard=True, one_time_keyboard=True
     )
     board.add(KeyboardButton("Contar palabras"), KeyboardButton("Contar caracteres"))
-    # Envía un mensaje para elegir qué contar y registra el manejador del siguiente paso
+    # Envíar un mensaje para elegir qué contar y registrar el manejador del siguiente paso
     bot.send_message(message.chat.id, "Elige qué quieres contar:", reply_markup=board)
     bot.register_next_step_handler(message, handle_count_choice)
 
 
 def handle_count_choice(message):
-    # Compruebar la elección del usuario y proceder con la función correspondiente
+    # Comprobar la elección del usuario y proceder con la función correspondiente
     if message.text.lower() == "contar palabras":
         bot.send_message(
             message.chat.id, "Envía el texto del que deseas contar palabras"
